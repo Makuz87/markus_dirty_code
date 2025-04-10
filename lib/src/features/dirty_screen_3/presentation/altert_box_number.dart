@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class boxNumber extends StatelessWidget {
+class altert_box_number extends StatelessWidget {
   final int number;
 
-  const boxNumber({
+  const altert_box_number({
     super.key,
     required this.number,
   });
@@ -12,17 +12,17 @@ class boxNumber extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12), color: Colors.redAccent),
+          borderRadius: BorderRadius.circular(12), color: Colors.orangeAccent),
       margin: const EdgeInsets.all(4),
       padding: const EdgeInsets.all(16.0),
       child: Row(
         children: [
-          const Icon(Icons.bug_report),
+          const Icon(Icons.warning),
           const SizedBox(
             width: 8,
           ),
           Text(
-            'Box $number',
+            'Alert $number',
             style: const TextStyle(fontSize: 20, color: Colors.white),
           )
         ],
